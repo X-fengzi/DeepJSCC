@@ -1,0 +1,25 @@
+{
+    "method": "DT_Gumbel",
+    "dataset": "mnist",
+    "task": "classification",
+    "encoder_model": "ToyNet",
+    "decoder_model": "Classifier",
+    "embd_dim": 64,
+    "lr": 0.0001,
+    "beta": 0.001,
+    "bs": 64,
+    "cuda": 1,
+    "epochs": 300,
+    "PSNR": true,
+    "BER": 0.1,
+    "seed": 2024,
+    "log_freq": 100,
+    "grad_clip": 50,
+    "config_file_path": "./train_yaml/MNIST_DT_Gumbel.yaml",
+    "sub_method": [
+        ""
+    ],
+    "input_dim": 784,
+    "output_dim": 10
+}
+2025-11-11 15:26:33,052 - INFO : ----------------- initial test -----------------

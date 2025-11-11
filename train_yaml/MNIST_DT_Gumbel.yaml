@@ -1,0 +1,15 @@
+method : DT_Gumbel
+dataset: mnist
+task: classification
+embd_dim: 64
+bs: 64
+beta: 0.001
+lr: 0.0001
+cuda: 1
+encoder_model: ToyNet
+decoder_model: Classifier
+epochs: 300
+seed: 2024
+
+
+# python main.py --config_file_path "./train_yaml/MNIST_DT_Gumbel.yaml"

@@ -1,0 +1,16 @@
+method : DeepJSCC
+dataset: mnist
+task: classification
+embd_dim: 24
+bs: 64
+beta: 0.001
+lr: 0.0001
+cuda: 0
+encoder_model: ToyNet
+decoder_model: LinearModel
+epochs: 100
+PSNR: False
+seed: 2025
+
+
+# python main.py --config_file_path "./train_yaml/MNIST_DeepJSCC.yaml"

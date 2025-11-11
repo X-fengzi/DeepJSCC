@@ -1,0 +1,57 @@
+{
+    "method": "DT_VQVAE",
+    "dataset": "mnist",
+    "task": "classification",
+    "encoder_model": "ToyNet",
+    "decoder_model": "Classifier",
+    "embd_dim": 64,
+    "lr": 0.0001,
+    "beta": 0.001,
+    "bs": 64,
+    "cuda": 0,
+    "epochs": 100,
+    "PSNR": true,
+    "BER": 0.1,
+    "seed": 2025,
+    "log_freq": 100,
+    "grad_clip": 50,
+    "config_file_path": "./train_yaml/MNIST_DT_VQVAE.yaml",
+    "sub_method": [
+        ""
+    ],
+    "input_dim": 784,
+    "output_dim": 10
+}
+2025-11-11 15:33:36,559 - INFO : ----------------- initial test -----------------
+2025-11-11 15:33:38,140 - INFO : start:  rate: 64, distortion: 2.7797765731811523, test_IZY: -0.6884418725967407, ACC:0.11379999667406082
+2025-11-11 15:33:38,145 - INFO : ----------------- train start... -----------------
+2025-11-11 15:33:38,182 - INFO : epoch-batch: 1-0 iter loss: 4.4833574295043945, train_IZY: -0.5255968570709229
+2025-11-11 15:33:40,321 - INFO : epoch-batch: 1-100 iter loss: 13.463835716247559, train_IZY: 1.9388811588287354
+2025-11-11 15:33:42,400 - INFO : epoch-batch: 1-200 iter loss: 29.639554977416992, train_IZY: 2.382629871368408
+2025-11-11 15:33:44,494 - INFO : epoch-batch: 1-300 iter loss: 58.470767974853516, train_IZY: 2.7259767055511475
+2025-11-11 15:33:46,576 - INFO : epoch-batch: 1-400 iter loss: 123.72649383544922, train_IZY: 2.7190394401550293
+2025-11-11 15:33:48,672 - INFO : epoch-batch: 1-500 iter loss: 292.853271484375, train_IZY: 2.1712381839752197
+2025-11-11 15:33:50,742 - INFO : epoch-batch: 1-600 iter loss: 805.3706665039062, train_IZY: 1.2615710496902466
+2025-11-11 15:33:52,843 - INFO : epoch-batch: 1-700 iter loss: 2015.4949951171875, train_IZY: 0.6984650492668152
+2025-11-11 15:33:54,929 - INFO : epoch-batch: 1-800 iter loss: 3653.906494140625, train_IZY: 0.6958314776420593
+2025-11-11 15:33:57,009 - INFO : epoch-batch: 1-900 iter loss: 6598.25732421875, train_IZY: -0.05166943743824959
+2025-11-11 15:33:57,780 - INFO : epoch-batch: 1-938 iter loss: 7503.9228515625, train_IZY: 0.19567841291427612
+2025-11-11 15:33:59,358 - INFO : epoch 1  rate: 64, distortion: 2.020848274230957, test_IZY: 0.40646040439605713, ACC:0.19480000436306
+2025-11-11 15:33:59,417 - INFO : epoch-batch: 2-0 iter loss: 7764.94482421875, train_IZY: 0.5189504027366638
+2025-11-11 15:34:01,511 - INFO : epoch-batch: 2-100 iter loss: 10862.017578125, train_IZY: 0.5234018564224243
+2025-11-11 15:34:03,618 - INFO : epoch-batch: 2-200 iter loss: 16101.43359375, train_IZY: 0.2192218154668808
+2025-11-11 15:34:05,722 - INFO : epoch-batch: 2-300 iter loss: 22961.35546875, train_IZY: -0.15078957378864288
+2025-11-11 15:34:07,768 - INFO : epoch-batch: 2-400 iter loss: 30041.12890625, train_IZY: -0.06949716061353683
+2025-11-11 15:34:09,815 - INFO : epoch-batch: 2-500 iter loss: 38113.6796875, train_IZY: -0.13952195644378662
+2025-11-11 15:34:12,003 - INFO : epoch-batch: 2-600 iter loss: 47239.03515625, train_IZY: -0.05323069542646408
+2025-11-11 15:34:14,051 - INFO : epoch-batch: 2-700 iter loss: 57485.19921875, train_IZY: -0.09452441334724426
+2025-11-11 15:34:16,147 - INFO : epoch-batch: 2-800 iter loss: 68911.453125, train_IZY: -0.055036511272192
+2025-11-11 15:34:18,263 - INFO : epoch-batch: 2-900 iter loss: 81562.3203125, train_IZY: -0.14543196558952332
+2025-11-11 15:34:19,060 - INFO : epoch-batch: 2-938 iter loss: 86569.234375, train_IZY: -0.0639624148607254
+2025-11-11 15:34:20,789 - INFO : epoch 2  rate: 64, distortion: 2.331681251525879, test_IZY: -0.04197688028216362, ACC:0.10239999741315842
+2025-11-11 15:34:20,831 - INFO : epoch-batch: 3-0 iter loss: 86704.2578125, train_IZY: -0.05314195156097412
+2025-11-11 15:34:23,060 - INFO : epoch-batch: 3-100 iter loss: 101151.9375, train_IZY: 0.02240658737719059
+2025-11-11 15:34:25,198 - INFO : epoch-batch: 3-200 iter loss: 116957.921875, train_IZY: 0.027140581980347633
+2025-11-11 15:34:27,341 - INFO : epoch-batch: 3-300 iter loss: 134185.078125, train_IZY: 0.027864284813404083
+2025-11-11 15:34:29,489 - INFO : epoch-batch: 3-400 iter loss: 152879.296875, train_IZY: -0.04601773992180824
+2025-11-11 15:34:31,678 - INFO : epoch-batch: 3-500 iter loss: 173100.109375, train_IZY: 0.036228831857442856
