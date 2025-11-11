@@ -1,0 +1,41 @@
+{
+    "method": "DT_Gumbel",
+    "dataset": "mnist",
+    "task": "classification",
+    "encoder_model": "ToyNet",
+    "decoder_model": "Classifier",
+    "embd_dim": 64,
+    "lr": 0.0001,
+    "beta": 0.001,
+    "bs": 64,
+    "cuda": 1,
+    "epochs": 300,
+    "PSNR": true,
+    "BER": 0.1,
+    "seed": 2024,
+    "log_freq": 100,
+    "grad_clip": 50,
+    "config_file_path": "./train_yaml/MNIST_DT_Gumbel.yaml",
+    "sub_method": [
+        ""
+    ],
+    "input_dim": 784,
+    "output_dim": 10
+}
+2025-11-11 15:54:19,089 - INFO : ----------------- initial test -----------------
+2025-11-11 15:54:20,857 - INFO : start:  rate: 64, distortion: 3.1037983894348145, test_IZY: -1.1559062004089355, ACC:0.09220000356435776
+2025-11-11 15:54:20,862 - INFO : ----------------- train start... -----------------
+2025-11-11 15:54:20,901 - INFO : epoch-batch: 1-0 iter loss: 3.033640146255493, train_IZY: -1.0546894073486328
+2025-11-11 15:54:23,099 - INFO : epoch-batch: 1-100 iter loss: 1.9459589719772339, train_IZY: 0.514502763748169
+2025-11-11 15:54:25,336 - INFO : epoch-batch: 1-200 iter loss: 1.4349619150161743, train_IZY: 1.2517156600952148
+2025-11-11 15:54:27,536 - INFO : epoch-batch: 1-300 iter loss: 1.1870743036270142, train_IZY: 1.6093419790267944
+2025-11-11 15:54:29,757 - INFO : epoch-batch: 1-400 iter loss: 1.009345531463623, train_IZY: 1.8657503128051758
+2025-11-11 15:54:31,953 - INFO : epoch-batch: 1-500 iter loss: 0.7475377321243286, train_IZY: 2.2434592247009277
+2025-11-11 15:54:34,187 - INFO : epoch-batch: 1-600 iter loss: 0.5576421618461609, train_IZY: 2.517420530319214
+2025-11-11 15:54:36,391 - INFO : epoch-batch: 1-700 iter loss: 0.3490303158760071, train_IZY: 2.8183839321136475
+2025-11-11 15:54:38,666 - INFO : epoch-batch: 1-800 iter loss: 0.32477158308029175, train_IZY: 2.853381633758545
+2025-11-11 15:54:40,933 - INFO : epoch-batch: 1-900 iter loss: 0.38390490412712097, train_IZY: 2.7680704593658447
+2025-11-11 15:54:41,799 - INFO : epoch-batch: 1-938 iter loss: 0.5369547605514526, train_IZY: 2.5472662448883057
+2025-11-11 15:54:43,619 - INFO : epoch 1  rate: 64, distortion: 0.25748157501220703, test_IZY: 2.95046067237854, ACC:0.9318000078201294
+2025-11-11 15:54:43,662 - INFO : epoch-batch: 2-0 iter loss: 0.2930957078933716, train_IZY: 2.899080514907837
+2025-11-11 15:54:45,983 - INFO : epoch-batch: 2-100 iter loss: 0.3831818401813507, train_IZY: 2.769113540649414

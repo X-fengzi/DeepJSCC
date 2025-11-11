@@ -49,7 +49,7 @@ if args.method == 'DeepJSCC':
     else:
         channel = WirelessChannel(1,0)
 
-    final_config = vars(args)  # 获取命名空间的所有属性并转换为字典
+    final_config = vars(args) 
     with open(log_filename, 'w') as f:
         json.dump(final_config, f, indent=4)
             # logger.info(f"Final configuration saved to {log_file}")
@@ -88,7 +88,7 @@ if args.method == 'DT_VQVAE':
     else:
         channel = BinarySymmetricChannel(args.BER)
 
-    final_config = vars(args)  # 获取命名空间的所有属性并转换为字典
+    final_config = vars(args)  
     with open(log_filename, 'w') as f:
         json.dump(final_config, f, indent=4)
             # logger.info(f"Final configuration saved to {log_file}")
@@ -127,7 +127,7 @@ if args.method == 'DT_Gumbel':
     else:
         channel = BinarySymmetricChannel(args.BER)
 
-    final_config = vars(args)  # 获取命名空间的所有属性并转换为字典
+    final_config = vars(args) 
     with open(log_filename, 'w') as f:
         json.dump(final_config, f, indent=4)
             # logger.info(f"Final configuration saved to {log_file}")
